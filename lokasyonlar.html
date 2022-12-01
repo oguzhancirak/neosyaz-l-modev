@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeosHouse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <style>
+    /* anasayfa */
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: .75rem;
+}
+
+.icon-link > .bi {
+  margin-top: .125rem;
+  margin-left: .125rem;
+  fill: currentcolor;
+  transition: transform .25s ease-in-out;
+}
+.icon-link:hover > .bi {
+  transform: translate(.25rem);
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: .75rem;
+}
+
+.text-shadow-1 { text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); }
+.text-shadow-2 { text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25); }
+.text-shadow-3 { text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); }
+
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.feature-icon-small {
+  width: 3rem;
+  height: 3rem;
+}
+
+  </style>
+  
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Offcanvas navbar large">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img class="bi me-2" width="40px" height="40px" src="img/logo.png"></img>NeosHouse</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-ligt" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label"><img class="bi me-2" width="40px" height="40px" src="img/logo.png"></img>NeosHouse</h5>
+            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="neden-biz.html">Neden Biz?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="lokasyonlar.html">Lokasyonlar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="iletisim.html">İletişim</a>
+              </li>
+            </ul>
+            <div class="d-flex mt-3 mt-lg-0">
+              <a class="btn btn-outline-success" type="submit" href="fiyat-al.html">Fiyat Al!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+      <!-- navbar-->
+        <!-- main -->
+        <main>
+          <!-- <div style="background-image: url('img/mainback.jpg'); background-size: cover;">
+          <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center img-fluid text-white">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+              <h1 class="display-2 fw-normal fw-bold">Geleceğin Çalışma Deneyimi;</h1>
+              <p class="lead fw-normal">Verimli, Esnek ve Neos</p>
+              <a class="btn btn-outline-success fw-bold" href="#giris">Keşfet!</a>
+            </div>
+          </div>
+        </div> -->
+        <div>
+          <main style="background-image: url(img/mainback.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; height: 100vh; background-color: rgba(255, 5, 5, 0.712);" class=" p-5 text-center text-white text-center d-flex justify-content-center align-items-center mask">
+              <div class="col-md-8 p-lg-5 mx-auto my-5">
+                  <h1 class="display-2 fw-bold">Geleceğin Çalışma Deneyimi;</h1>
+                  <p class="lead fw-semibold">Peki Konumlarımız Neresi?</p>
+                  <p class="lead">
+                      <a href="#giris" class="btn btn-lg btn-success fw-bold">Hadi Öğrenelim</a>
+                  </p>
+              </div>   
+          </main>
+      </div>
+        
+      <div id="giris" class="b-example-divider featurette-divider"></div>
+         
+          <div id="maslak" class="container px-4 py-5 pb-2 border-bottom">
+        
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5 ">
+
+                <div class="d-flex flex-column align-items-start gap-2">
+                  <h3 class="fw-bold">Maslak Ofis</h3>
+                  <p class="fw-semibold">Maslak, 42 Maslak, Maslak Mah., Ahi Evran Cd. No:0 D:0 34485 Sarıyer/İstanbul</p>
+                  <p class="fw-semibold">(0212) 000 00 00 </p>
+                  <a href="fiyat-al.html" class="btn btn-success btn-lg">Fiyat Al!</a>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 g-4">
+                  <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="img/maslak.svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+
+                </div>
+             
+              <div class="row row-cols-1 row-cols-sm-3 g-4">
+                
+              </div>
+            </div>
+          </div>
+          <div class="b-example-divider"></div>
+          <div class="bg-light"> 
+          <div id="atasehir" class="container px-4 py-5 pb-2 border-bottom">
+        
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+              <div class="d-flex flex-column align-items-start gap-2">
+                <h3 class="fw-bold">Ataşehir Ofis</h3>
+                <p class="fw-semibold">Ataşehir, 42 Ataşehir, Ataşehir Mah., Ahi Evran Cd. No:0 D:0 34000 Ataşehir/İstanbul</p>
+                  <p class="fw-semibold">(0216) 000 00 00 </p>
+                <a href="fiyat-al.html" class="btn btn-success btn-lg">Fiyat Al!</a>
+              </div>
+              <div class="row row-cols-1 row-cols-sm-2 g-4">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="img/atasehir.svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="b-example-divider"></div>
+          <div id="maltepe" class="container px-4 py-5 pb-2 border-bottom">
+        
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5 ">
+
+                <div class="d-flex flex-column align-items-start gap-2">
+                  <h3 class="fw-bold">Maltepe Ofis</h3>
+                  <p class="fw-semibold">Maltepe , 42 Maltepe , Maltepe  Mah., Ahi Evran Cd. No:0 D:0 34000 Maltepe/İstanbul</p>
+                  <p class="fw-semibold">(0216) 000 00 00 </p>
+                  <a href="fiyat-al.html" class="btn btn-success btn-lg">Fiyat Al!</a>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 g-4">
+                  <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="img/maltepe.svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+
+                </div>
+             
+              <div class="row row-cols-1 row-cols-sm-3 g-4">
+                
+              </div>
+            </div>
+          </div>
+          <div class="b-example-divider"></div>
+          <div class="bg-light"> 
+          <div id="levent" class="container px-4 py-5 pb-2 border-bottom">
+        
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+              <div class="d-flex flex-column align-items-start gap-2">
+                <h3 class="fw-bold">Levent Ofis</h3>
+                <p class="fw-semibold">Levent, 42 Levent, Levent Mah., Ahi Evran Cd. No:0 D:0 34000 Levent/İstanbul</p>
+                  <p class="fw-semibold">(0212) 000 00 00 </p>
+                <a href="fiyat-al.html" class="btn btn-success btn-lg">Fiyat Al!</a>
+              </div>
+              <div class="row row-cols-1 row-cols-sm-2 g-4">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="img/levent.svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="b-example-divider"></div>
+          <div id="besiktas" class="container px-4 py-5 pb-2 border-bottom">
+        
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5 ">
+
+                <div class="d-flex flex-column align-items-start gap-2">
+                  <h3 class="fw-bold">Beşiktaş Ofis</h3>
+                  <p class="fw-semibold">Beşiktaş, 42 Beşiktaş, Beşiktaş Mah., Ahi Evran Cd. No:0 D:0 34000 Beşiktaş/İstanbul</p>
+                  <p class="fw-semibold">(0212) 000 00 00 </p>
+                  <a href="fiyat-al.html" class="btn btn-success btn-lg">Fiyat Al!</a>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 g-4">
+                  <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="img/besiktas.svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+
+                </div>
+             
+              <div class="row row-cols-1 row-cols-sm-3 g-4">
+                
+              </div>
+            </div>
+          </div>
+        </main>
+        <!-- main -->
+       <!-- footer -->
+  <footer class="container-fluid py-5 mt-auto text-dark-50">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Menü</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Anasayfa</a></li>
+          <li class="nav-item mb-2"><a href="neden-biz.html" class="nav-link p-0 text-muted">Neden Biz?</a></li>
+          <li class="nav-item mb-2"><a href="lokasyonlar.html" class="nav-link p-0 text-muted">Lokasyonlar</a></li>
+          <li class="nav-item mb-2"><a href="iletisim.html" class="nav-link p-0 text-muted">İletişim</a></li>  
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Lokasyonlar</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="lokasyonlar.html#maslak" class="nav-link p-0 text-muted">Maslak</a></li>
+          <li class="nav-item mb-2"><a href="lokasyonlar.html#atasehir" class="nav-link p-0 text-muted">Ataşehir</a></li>
+          <li class="nav-item mb-2"><a href="lokasyonlar.html#maltepe" class="nav-link p-0 text-muted">Maltepe</a></li>
+          <li class="nav-item mb-2"><a href="lokasyonlar.html#levent" class="nav-link p-0 text-muted">Levent</a></li>
+          <li class="nav-item mb-2"><a href="lokasyonlar.html#besiktas" class="nav-link p-0 text-muted">Beşiktaş</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3"></div>
+
+      <div class="col-md-5 offset-md-1 mb-3 text-dark">
+        <form>
+          <h5>İletişimi Koparma!</h5>
+          <p>Kampanyalarımız ve Yeni Lokasyonlarımızdan Haberdar Olmak İçin Eposta Adresinizi Bizimle Paylaşın.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">E-Posta Adresin</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="E-Posta Adresin">
+            <button class="btn btn-success" type="button">Gönder</button>
+          </div>
+        </form>
+        <br>
+        <div style="text-align: center;">
+          <a class="btn btn-lg btn-success" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a class="btn btn-lg btn-success" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" ></i></a> 
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top text-dark">
+      <p>&copy; 2022 NeosHouse. Tüm Hakları Saklıdır.</p>
+    </div>
+  </footer>
+    <!-- footer -->
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</html>

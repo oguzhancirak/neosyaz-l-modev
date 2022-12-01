@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeosHouse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <style>
+    /* anasayfa */
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: .75rem;
+}
+
+.icon-link > .bi {
+  margin-top: .125rem;
+  margin-left: .125rem;
+  fill: currentcolor;
+  transition: transform .25s ease-in-out;
+}
+.icon-link:hover > .bi {
+  transform: translate(.25rem);
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: .75rem;
+}
+
+.text-shadow-1 { text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); }
+.text-shadow-2 { text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25); }
+.text-shadow-3 { text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); }
+
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.feature-icon-small {
+  width: 3rem;
+  height: 3rem;
+}
+
+  </style>
+
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Offcanvas navbar large">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img class="bi me-2" width="40px" height="40px" src="img/logo.png"></img>NeosHouse</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-ligt" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label"><img class="bi me-2" width="40px" height="40px" src="img/logo.png"></img>NeosHouse</h5>
+            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="neden-biz.html">Neden Biz?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="lokasyonlar.html">Lokasyonlar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="iletisim.html">İletişim</a>
+              </li>
+            </ul>
+            <div class="d-flex mt-3 mt-lg-0">
+              <a class="btn btn-outline-success" type="submit" href="fiyat-al.html">Fiyat Al!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+      <!-- navbar-->
+        <!-- main -->
+        <main>
+
+        <div>
+          <main style="background-image: url(img/mainback.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; height: 100vh; background-color: rgba(255, 5, 5, 0.712);" class=" p-5 text-center text-white text-center d-flex justify-content-center align-items-center mask">
+              <div class="col-md-8 p-lg-5 mx-auto my-5">
+                  <h1 class="display-2 fw-bold">Hesaplı, Uygun ve Neos</h1>
+                  <p class="lead fw-semibold">Size özel ödeme planlarımızdam yararlanmak için ofislerimize bekliyoruz!</p>
+                  <p class="lead">
+                      <a href="#giris" class="btn btn-lg btn-success fw-bold">Fiyat Al!</a>
+                  </p>
+              </div>
+          </main>
+      </div>
+
+      <div id="giris" class="b-example-divider featurette-divider"></div>
+
+          <div class="container px-4 py-5" id="custom-cards">
+            <h2 class="pb-2 border-bottom">Paketlerimiz</h2>
+
+            <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4 py-5">
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/ofis1.jpg');">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Sabit Masa</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="d-flex align-items-center me-3"><button onclick="sabitmasaac()" class="btn btn-success text-white" ><a class="nav-link" href="#sabitmasa">Fiyat Al!</a></button></li>
+                      <li class="d-flex align-items-center me-3">
+                        <i width="1em" height="1em" class="bi me-2 fa fa-user text-white"></i>
+                        <small>Bireysel</small>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/ofis2.jpg');">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Hazır Ofis</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="d-flex align-items-center me-3"><button onclick="hazirofisac()" class="btn btn-success text-white" ><a class="nav-link" href="#hazirofis">Fiyat Al!</a></button></li>
+                      <li class="d-flex align-items-center me-3">
+                        <i width="1em" height="1em" class="bi me-2 fa fa-users text-white"></i>
+                        <small>2 - 15 Kişilik</small>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/ofis3.jpg');">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Suites</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="d-flex align-items-center me-3"><button onclick="suitesac()" class="btn btn-success text-white" ><a class="nav-link" href="#suites">Fiyat Al!</a></button></li>
+                      <li class="d-flex align-items-center me-3">
+                        <i width="1em" height="1em" class="bi me-2 fa fa-users text-white"></i>
+                        <small>15+ kişilik</small>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/ofis4.jpg');">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Enterprise</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="d-flex align-items-center me-3"><button onclick="enterpriseac()" class="btn btn-success text-white" ><a class="nav-link" href="#enterprise">Fiyat Al!</a></button></li>
+                      <li class="d-flex align-items-center me-3">
+                        <i width="1em" height="1em" class="bi me-2 fa fa-users text-white"></i>
+                        <small>Özel</small>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="b-example-divider"></div>
+                    <!-- sabitmasa -->
+          <div id="sabitmasa" style="display: none;" class="container px-4 py-5">
+            <div class="modal modal-signin position-static d-block py-5" tabindex="-1" role="dialog" id="modalSignin">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content rounded-4 shadow">
+                  <div class="modal-header p-5 pb-4 border-bottom-0">
+                    <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+                    <h1 class="fw-bold mb-0 fs-2">SABİT MASA</h1>
+                    <button onclick="sabitmasakapat()" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+
+                  <div class="modal-body p-5 pt-0">
+                    <form class="">
+                      <div class="form-floating mb-3">
+                        <select class="form-control rounded-3" name="" id="olokasyon" >
+                          <option selected>Lokasyon Seçiniz</option>
+                          <option value="1">Maslak</option>
+                          <option value="2">Ataşehir</option>
+                          <option value="3">Maltepe</option>
+                          <option value="4">Levent</option>
+                          <option value="5">Beiktaş</option>
+                        </select>
+                        <label for="floatingInput">Lokasyon</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <div class="form-floating mb-3">
+                          <select class="form-control rounded-3" name="" id="gezici" >
+                            <option selected>Seçiniz</option>
+                            <option value="1">İstiyorum</option>
+                            <option value="2">İstemiyorum</option>
+                          </select>
+                          <label for="floatingInput">Gezici Üyelik</label>
+                        </div>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="number" class="form-control rounded-3" id="kaysuresi" placeholder="">
+                        <label for="floatingInput">Kullanacağınız Ay Süresi</label>
+                      </div>
+                      <button onclick="SabitMasaHesapla()" type="button" class="w-100 mb-2 btn btn-lg rounded-3 btn-success">HESAPLA</button>
+
+                      <div style="display:none;" class="form-floating mb-3" id="ucretdiv">
+                        <input type="text" class="form-control rounded-3" id="sonucboxsabit" placeholder="" value="" readonly>
+                        <label for="floatingInput">Toplam Ücret (**Damga Vergisi Dahil)</label>
+                      </div>
+                      <small class="text-muted">Hesaplanan değerler yaklaşıktır. Kesin fiyat bilgisi için ofislerimizi ziyaret ediniz.</small>
+                      <hr class="my-4">
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- sabitmasa -->
+            <!-- hazır ofis-->
+            <div id="hazirofis" style="display: none;" class="container px-4 py-5">
+            <div class="modal modal-signin position-static d-block py-5" tabindex="-1" role="dialog" id="modalSignin">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content rounded-4 shadow">
+                  <div class="modal-header p-5 pb-4 border-bottom-0">
+                    <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+                    <h1 class="fw-bold mb-0 fs-2">HAZIR OFİS</h1>
+                    <button onclick="hazirofiskapat()" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body p-5 pt-0">
+                    <form class="">
+                      <div class="form-floating mb-3">
+                        <select class="form-control rounded-3" name="" id="konum" >
+                          <option selected>--İlçe Seçiniz--</option>
+                          <option value="1">Bebek</option>
+                          <option value="2">Etiler</option>
+                          <option value="3">Üsküdar</option>
+                          <option value="4">Caddebostan</option>
+                          <option value="5">Sarıyer</option>
+                        </select>
+                        <label for="floatingInput">İlçe</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <div class="form-floating mb-3">
+                          <select class="form-control rounded-3" name="" id="calisan" >
+                            <option selected>--Çalışan Sayınız--</option>
+                            <option value="1">2-15</option>
+                            <option value="2">+50</option>
+                          </select>
+                          <label for="floatingInput">Çalışan</label>
+                        </div>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="number" class="form-control rounded-3" id="kalaysuresi" placeholder="">
+                        <label for="floatingInput"> Ofisi Kullanacağınız Ay Süresi</label>
+                      </div>
+                      <button onclick="HazirOfisHesapla()" type="button" class="w-100 mb-2 btn btn-lg rounded-3 btn-success">HESAPLA</button>
+
+                      <div style="display:none;" class="form-floating mb-3" id="ucretdiv">
+                        <input type="text" class="form-control rounded-3" id="sonucbox" placeholder="" value="" readonly>
+                        <label for="floatingInput">Toplam Ücret (**Damga Vergisi Dahil)</label>
+                      </div>
+                      <small class="text-muted">Hesaplanan değerler yaklaşıktır. Kesin fiyat bilgisi için ofislerimizi ziyaret ediniz.</small>
+                      <hr class="my-4">
+
+                    </form>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- hazır ofis-->
+
+
+          <!-- suites -->
+          <div class="modal modal-signin position-static d-block py-5" tabindex="-1" role="dialog" >
+      <div class="modal-dialog" role="document" id="suites">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+
+            <h1 class="fw-bold mb-0 fs-2">Suits</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="suiteskapat()"></button>
+          </div>
+          <div class="modal-body p-5 pt-0" >
+            <form>
+              <div class="row ">
+                <div class="col-md-12 mb-2">
+                  <select class="form-select mb-2" aria-label="Default select example" id="courntry">
+                    <option value="0"> İlçe Seçiniz </option>
+                    <option value="1">Maslak </option>
+                    <option value="2">Ataşehir</option>
+                    <option value="3">Levent</option>
+                    <option value="4">Beşiktaş</option>
+                    <option value="5">Maltepe</option>
+                  </select>
+                </div>
+                <div class="col-md-12 mb-2">
+                  <select class="form-select" aria-label="Default select example" id="stuff">
+                    <option value="0">Çalışan Sayınız</option>
+                    <option value="1">15</option>
+                    <option value="2">15-30</option>
+                  </select>
+                </div>
+
+              </div>
+              <div class="form-floating mb-3">
+
+                <button class="w-100 mb-2 btn btn-lg rounded-3 btn-success" onclick="suitCity()">HESAPLA</button>
+                <div id="myTotoly">
+
+                </div>
+                <small class="text-muted">FİYAT TEKLİFİMİZ <mark>30</mark> GÜN GEÇERLİDİR.</small>
+
+
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+          <!-- suites -->
+          <!-- enterprise -->
+          <div id="enterprise" style="display: none;" class="container px-4 py-5">
+            <div class="modal modal-signin position-static d-block py-5" tabindex="-1" role="dialog" id="modalSignin">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content rounded-4 shadow">
+                  <div class="modal-header p-5 pb-4 border-bottom-0">
+                    <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+                    <h1 class="fw-bold mb-0 fs-2">ENTERPRISE</h1>
+                    <button onclick="" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+
+                  <div class="modal-body p-5 pt-0">
+                    <form class="">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <select class="form-select mb-2" aria-label="Default select example" id="mySelect" onchange="myFunction()">
+                            <option value="0" > İlçe Seçiniz </option>
+                              <option value="1" >Umraniye </option>
+                              <option value="2" >Besiktas</option>
+                              <option value="3">Kadıkoy</option>
+                              <option value="4">Silivri</option>
+                          </select>
+                        </div>
+                        <div class="col-md-6">
+                          <select class="form-select" aria-label="Default select example" id="mySelect1" onchange="myFunction1()">
+                            <option value="0">Çalışan Sayınız</option>
+                            <option value="1">30-50</option>
+                            <option value="2">50+</option>
+                          </select>
+                        </div>
+
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control rounded-3" id="textbox"  placeholder="">
+
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control rounded-3" id="textbox2" placeholder="">
+
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control rounded-3" id="textbox3" placeholder="">
+
+                      </div>
+                      <button class="w-100 mb-2 btn btn-lg rounded-3 btn-success" onclick="hesapla()">HESAPLA</button>
+                      <small class="text-muted">Hesaplanan değerler yaklaşıktır. Kesin fiyat bilgisi için ofislerimizi ziyaret ediniz.</small>
+                      <hr class="my-4">
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- enterprise -->
+          <div class="b-example-divider"></div>
+
+          <div class="bg-light">
+          <div class="container px-4 py-5 ">
+
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5 ">
+              <div class="d-flex flex-column align-items-start gap-2">
+                <h2 class="fw-bold">İşine değer katan hizmetler</h2>
+                <p >ihtiyacın olan ek hizmetleri tercih edebilirsin</p>
+              </div>
+              <div class="row row-cols-1 row-cols-sm-3 g-4">
+                <div class="d-flex flex-column gap-2">
+                  <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-4 rounded-3">
+                    <i class="fa fa-users text-white"></i>
+                  </div>
+                  <h4 class="fw-semibold mb-0">Toplantı Odası</h4>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-4 rounded-3">
+                    <i class="fa fa-phone text-white"></i>
+                  </div>
+                  <h4 class="fw-semibold mb-0">Sekreterlik</h4>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-4 rounded-3">
+                    <i class="fa fa-lock text-white"></i>
+                  </div>
+                  <h4 class="fw-semibold mb-0">Kilitli Dolap</h4>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-4 rounded-3">
+                    <i class="fa fa-truck text-white"></i>
+                  </div>
+                  <h4 class="fw-semibold mb-0">Posta Hizmetleri</h4>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-4 rounded-3">
+                    <i class="fa fa-print text-white"></i>
+                  </div>
+                  <h4 class="fw-semibold mb-0">Yazıcı</h4>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-4 rounded-3">
+                    <i class="fa fa-car text-white"></i>
+                  </div>
+                  <h4 class="fw-semibold mb-0">Otopark Hizmeti</h4>
+                </div>
+              </div>
+            </div>
+          </div></div>
+          <div class="b-example-divider">
+          </div>
+
+
+        </main>
+        <!-- main -->
+       <!-- footer -->
+  <footer class="container-fluid py-5 mt-auto text-dark-50">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Menü</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Anasayfa</a></li>
+          <li class="nav-item mb-2"><a href="neden-biz.html" class="nav-link p-0 text-muted">Neden Biz?</a></li>
+          <li class="nav-item mb-2"><a href="lokasyonlar.html" class="nav-link p-0 text-muted">Lokasyonlar</a></li>
+          <li class="nav-item mb-2"><a href="iletisim.html" class="nav-link p-0 text-muted">İletişim</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Lokasyonlar</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="lokasyonlar.html#maslak" class="nav-link p-0 text-muted">Maslak</a></li>
+          <li class="nav-item mb-2"><a href="lokasyonlar.html#atasehir" class="nav-link p-0 text-muted">Ataşehir</a></li>
+          <li class="nav-item mb-2"><a href="lokasyonlar.html#maltepe" class="nav-link p-0 text-muted">Maltepe</a></li>
+          <li class="nav-item mb-2"><a href="lokasyonlar.html#levent" class="nav-link p-0 text-muted">Levent</a></li>
+          <li class="nav-item mb-2"><a href="lokasyonlar.html#besiktas" class="nav-link p-0 text-muted">Beşiktaş</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3"></div>
+
+      <div class="col-md-5 offset-md-1 mb-3 text-dark">
+        <form>
+          <h5>İletişimi Koparma!</h5>
+          <p>Kampanyalarımız ve Yeni Lokasyonlarımızdan Haberdar Olmak İçin Eposta Adresinizi Bizimle Paylaşın.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">E-Posta Adresin</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="E-Posta Adresin">
+            <button class="btn btn-success" type="button">Gönder</button>
+          </div>
+        </form>
+        <br>
+        <div style="text-align: center;">
+          <a class="btn btn-lg btn-success" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a class="btn btn-lg btn-success" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" ></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top text-dark">
+      <p>&copy; 2022 NeosHouse. Tüm Hakları Saklıdır.</p>
+    </div>
+  </footer>
+    <!-- footer -->
+</body>
+<script src="script-hesaplama.js">
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</html>
